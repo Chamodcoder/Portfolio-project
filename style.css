@@ -48,12 +48,12 @@ body{
     transition: 0.3s ease;
 }
 
-.logo.hover{
+.logo :hover{
     transform: scale(1.1);
 }
 
-.logo span{
-    text-shadow: 0 0 25px var(--main-color);
+.logo span:hover{
+    text-shadow: 0 0 30px var(--main-color);
 }
 
 .navbar a{
@@ -132,7 +132,7 @@ span{
     transition: 0.4s ease-in-out;
 }
 
-.home-img img:hover{
+.home-group:hover{
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color),
                 0 0 100px var(--main-color);
@@ -160,7 +160,7 @@ span{
     transition: 0.3s ease-in-out;
 }
 .social-icons a:hover{
-    color: var(--main-color);
+    color: var(--text-color);
     transform: scale(1.3) translateY(-5px);
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
@@ -227,7 +227,7 @@ span{
 }
 @keyframes cursor {
     to{
-        border-left: 20px solid var(--main-color);
+        border-left: 2px solid var(--main-color);
     }
 }
 @keyframes words{
