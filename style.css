@@ -480,3 +480,7 @@ span{
     color: gold;
     font-size: 2rem;
 }
+.contact{
+    background-color: var(--bg-color);
+    
+}
