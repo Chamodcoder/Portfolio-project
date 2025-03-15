@@ -211,7 +211,7 @@ span{
     position: relative;
 }
 .text-animation span::before{
-    content:"web developer";
+    content:" ";
     color:var(--main-color);
     animation: words 20s infinite;
 }
@@ -653,7 +653,7 @@ span{
         font-size: 8rem;
         margin-top: 3rem;
     }
-    .home.content p{
+    .home-content p{
         max-width: 600px;
         margin: 0 auto;
     }
