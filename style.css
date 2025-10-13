@@ -313,7 +313,7 @@ span{
 .timeline-item{
     margin-bottom: 40px;
     width: 100%;
-    position: relative;
+    position: center;
 }
 .timeline-item:last-child{
     margin-bottom: 0;
@@ -366,6 +366,7 @@ span{
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
+    position: left;
 } 
 ::-webkit-scrollbar{
     width: 6px;
@@ -413,7 +414,7 @@ span{
     max-height: 200px;
     justify-content: left;
     align-items: baseline;
-    padding: 5rem 5rem;
+    padding: 2rem 5rem;
 }
 .service-info h4{
     font-size: 3rem;
@@ -441,11 +442,11 @@ span{
     margin-bottom: 5rem;
 } 
 .testimonial-box img{
-    width: 15rem;
+    width: 22rem;
     height: 15rem;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     border: 3px solid var(--main-color);
-    box-shadow: 0 0 25px var(--main-color);
+    box-shadow: 0 0 5px var(--main-color);
 }
 .wrapper{
     display: grid;
@@ -671,4 +672,3 @@ span{
         grid-template-columns: repeat(1,1fr);
     }
 }
-
