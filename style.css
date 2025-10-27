@@ -673,8 +673,6 @@ span{
     }
 }
 
-
-
 /*responsive*/
 /* ...existing code... */
 
@@ -785,4 +783,53 @@ img, video { max-width: 100%; height: auto; display: block; }
     padding: 18px 22px;
     box-shadow: 0 0 8px var(--main-color);
   }
+}
+
+/* Center home content on small/medium screens */
+@media (max-width: 900px) {
+  .home {
+    display: flex;
+    flex-direction: column;    /* stack */
+    align-items: center;       /* center horizontally */
+    justify-content: center;   /* center vertically inside section */
+    text-align: center;
+    gap: 1.5rem;
+    padding: 3rem 1rem;
+  }
+
+  /* force image to appear above the text without changing HTML */
+  .home-group {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-content {
+    order: 2;
+    width: 100%;
+    max-width: 900px;
+    padding: 0 1rem;
+  }
+
+  .home-group img {
+    width: 60vw;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .btn-group {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* optional tighter rules for very small phones */
+@media (max-width: 420px) {
+  .home-group img { width: 72vw; max-width: 260px; }
+  .home-content h1 { font-size: 3.2rem; }
+  .home-content p { font-size: 1.4rem; }
 }
