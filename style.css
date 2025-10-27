@@ -833,3 +833,42 @@ img, video { max-width: 100%; height: auto; display: block; }
   .home-content h1 { font-size: 3.2rem; }
   .home-content p { font-size: 1.4rem; }
 }
+
+/* Keep original desktop layout & image proportions */
+@media (min-width: 901px) {
+  .home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 4rem 6%;
+  }
+
+  .home-content {
+    flex: 1 1 55%;
+    max-width: 55%;
+  }
+
+  .home-group {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-group img {
+    width: 100%;
+    max-width: 420px; /* adjust to desired desktop image width */
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+  }
+}
+
+/* keep the previously added mobile centering below (no change) */
+@media (max-width: 900px) {
+  .home { /* your existing mobile rules */ }
+  /* ...existing mobile rules... */
+}
