@@ -247,15 +247,15 @@ span{
     }
     41%,
     60%{
-        content: "UI/UX Designer";
+        content: "Project Manager";
     }
     61%,
     80%{
-        content: "Web Developer";
+        content: "Frontend Designer";
     }
     81%,
     100%{
-        content: "Software Tester";
+        content: "Web Designer";
     }
 }
 @keyframes typing{
